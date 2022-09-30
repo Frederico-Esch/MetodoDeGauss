@@ -33,6 +33,10 @@ public:
     void swap(double row1, double row2) {
         std::swap(values[row1], values[row2]);
     }
+    std::array<double, _size> to_array(){
+        std::array<double, _size> result(values);
+        return result;
+    }
 };
 
 #endif //METODODEGAUSS_ANSWERVECTOR_H
